@@ -1,6 +1,917 @@
-<html>
-<head>ZARD</head>
-<body>
-<p>ZARD sample's website!</p>
-</body>
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="baidu-site-verification" content="389RrwYLc4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZARD</title>
+    <!-- Bootstrap -->
+      <link rel="shortcut icon" href="/favicon.ico"/>
+      <link href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
+      <link rel='stylesheet' href='index.css' />
+      
+	<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+     
+
+	<script>
+	//调整高度
+(function(){window.onload=window.onresize=function(){
+		//是否有标题
+		var tH = $('#header')?$('#header').outerHeight():0;
+		var de = document.documentElement;
+		var H_a=[];
+		[window.outerHeight,window.innerHeight].forEach(function(e){
+			if(e)H_a.push(e);
+		});
+		var sH = Math.min.apply(null,H_a);//屏幕可用高度
+		var sW = window.innerWidth;
+		console.log(sH);
+		//alert(sH);
+		var bH = $('#footer').outerHeight();//底部高度
+		console.log(sH,bH,tH);
+		//if(sW<=900)$('.container').css({margin:0,padding:0});
+		$('.content').css({'min-height':(sH-bH-tH)+'px'});	
+		//$('.zard-content').css('width',sW+'px');
+		//$('.wrap').css('width',sW*5+'px');
+	}
+})();
+	</script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+     
+ <div id='header'>
+     <div class='container'>
+         <div class='head-logo'>
+         	<img src='http://www.wezard.net/20th/images/logo_on.png' width=60px height=60px>
+         </div>
+         <div class='menu'>
+             <ul>
+                 <li class='active' href='#index'>首页</li>
+                 <li href='#music'>音乐盒</li>
+                 <li href='#gallery'>图库</li>
+                 <li href='#about'>关于</li>
+                 
+             </ul>
+         </div>
+         <div class='text-logo'>
+             <div class='logo-svg line'>
+				<svg version="1.1"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox = "0 0 60 23">
+					<!--
+					D Path-
+					M459,170 L459,27 518,28 C518,28 569,44 590,87 L590,103 C590,103 571,147 518,170 L459,170
+					内环
+					M491,145 L491,52 512,53  C512,53,549,69,556,90  L556,105 C556,105 554,132 512,146  L491,145
+					--->
+					<path id='path' fill="none"
+					stroke = "rgb(19,191,255)"
+					stroke-width = "0.4"
+					d = "M3.3,2.8 L14.9,2.8 14.9,4.4 7.1,14.6 14.8,14.6 14.8,17.0 2.8,17.0 2.8,15.3 10.6,5.3 3.3,5.2 3.3,2.8   M15.5,17.0 L20.9,2.8 24.7,2.8 30.1,17 26.6,17 25.4,13.8 20,13.8 19,17 15.4,17 M20.7,11.4  L24.7,11.4 22.7,5.3 20.7,11.4 M32,17 L32,2.8 37.4,2.8 C40.4,2.8 42.6,7 39.2,10.6 C39.2,10.6 42.2,13.7 44.4,17 L40.7,17 C40.7,17  38.7,13.9 36.6,11.4 L35.2,11.4 35.2,17.0 32,17.0  M35.2,5.0 L37.3,5.0 C37.3,5.0 39.2,7.0  37.3,9.2 L35.2,9.1 35.2,5.0  M45.9,17.0 L45.9,2.7 51.8,2.8 C51.8,2.8 58,3.9 59.0,8.7 L59.0,10.3 C59.0,10.3 58.1,15.7 51.8,17.0 L45.9,17.0 M49.1,14.5 L49.1,5.2 51.2,5.3  C51.2,5.3 55.9,6.4 55.7,9.5 C55.7,9.5 55.4,13.8 51.2,14.6  L49.1,14.5"
+					/>
+				</svg>
+				</div>
+             
+         </div>
+     </div>
+ </div>
+ <div class="content">
+<div id='index' class='wrap'>
+	<div class='index zard-content'>
+		<div class='container line'>
+			 <div class='left-text col-md-7'>
+				 <h4 style='margin-bottom:20px;'>きっと忘れない，一定不会忘记。</h4>
+				 <p>一定不会忘记 她突然离世。</p>
+				<p>即使很少公开露面也同样被许多人所喜爱着，她的歌声始终支撑着我们。</p>
+				<p>哭泣的时候也好，欢笑的时候也好，委屈的时候也好，</p>
+				<p>痛苦的时候也好，都被她的歌声温柔地包围着。</p>
+				<p>2007年5月27日。</p>
+				<p>她一个人踏上了去往天国的旅途。</p>
+				<p>留下了许多被称做作品的宝物，和柔和的微笑。</p>
+				<p>在那之后的三个月里，面对充斥悲伤的每一天，还有可以看到的东西。</p>
+				<p>我们不会忘记叫坂井泉水的这个人。</p>
+				<p>不会忘记她为此献出人生的ZARD的音乐。</p>
+				<p>一定不会忘记。</p>
+			 </div>
+			 <div class='right-pic col-md-5 col-xs-12'>
+				<img src='http://www.wezard.net/20th/images/live/livephoto.jpg' style='width:100%'>
+				<p>What a beautiful moment...</p>
+			 </div>
+		</div>
+		<div class='zard-btn line text-center'>
+			<button class='btn btn-next'>开启ZARD音乐之旅</button>
+		</div>
+     </div>
+	 <!--介绍--灌篮高手-->
+	<div class='intro1 zard-content'>
+		<div class='container'>
+		<div class='line'>
+			<img src='http://i0.itc.cn/20130806/2f6f_49863f9c_d822_fd0c_b6e8_4a7e71d1e838_2.jpg' width=100%>
+		</div>
+		<div class='line'>
+			灌篮高手主题曲《我的朋友》
+		</div>
+		
+		<div class='line text-center'><button class='btn btn-next'>Next</button></div>
+		</div>
+	</div>
+	
+	<div class='intro2 zard-content'>
+	<div class='container'>
+		<div class='line'>
+		<div class='left col-md-4 col-xs-12'>
+			<img src='http://p3.qhimg.com/t01926e0c82e700a4fc.jpg' width='100%'>
+		</div>
+		
+		<div class='left col-md-8 col-xs-12'>
+		名侦探柯南转动命运之轮
+		
+		</div>
+		</div>
+		<div class='line text-center'><button class='btn btn-next'>Continue</button></div>
+		</div>
+	</div>
+	<div class='intro3 zard-content'>
+	<div class='container'>
+		<div class='line'>
+		<div class='left col-md-8 col-xs-12'>
+			七龙珠 DANDAN
+		</div>
+		
+		<div class='right col-md-4 col-xs-12'>
+		<img src='http://game.onegreen.net/emu/UploadFile/gba/2009080412585911397.jpg' width='100%'>
+		
+		</div>
+		</div>
+		<div class='line text-center'><button class='btn btn-next'>Continue</button></div>
+		
+		</div>
+	</div>
+	<div class='intro4 zard-content'>
+	<div class='container'>
+	<div class='line'>
+		<div class='left col-md-4 col-xs-12'>
+			<img src='http://7u2mbi.com1.z0.glb.clouddn.com/%E7%BD%91%E5%8F%8B%E4%B8%8A%E4%BC%A0/%5D2%7B~%249Y_SHGM%40IJ7%24MZ5W%24R.jpg' width='100%'>
+		</div>
+		
+		<div class='left col-md-8 col-xs-12'>
+		突然
+		
+		</div>
+		</div>
+		<div class='line text-center'><button class='btn btn-next'>More</button></div>
+		
+		
+		</div>
+	</div>
+	<!---横向结束---->
+</div>
+<!---纵向页面开始--->
+	<!---关于--->
+
+	
+	
+	<div id='gallery'>
+		<div class='container'>
+			<div class='top pic-preview'>
+				<ul>
+					
+				</ul>
+				<div id='gallery-refresh'  style='height:60px;line-height:60px'><button class='btn btn-primary'><span class='glyphicon glyphicon-refresh'></span></button></div>
+			</div>
+			<div class='gallery-show'>
+				<div class='gallery-box'>
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						
+						<div class="carousel-inner" role="listbox">
+							<div class="item">
+								<img data-src="http://www.wezard.net/20th/images/logo_on.png" alt="First slide [900x500]" src="http://www.wezard.net/20th/images/logo_on.png">
+							</div>
+							
+							<div class="item active">
+								<img data-src="http://7u2mbi.com1.z0.glb.clouddn.com/%E7%BD%91%E5%8F%8B%E4%B8%8A%E4%BC%A0/%5D2%7B~%249Y_SHGM%40IJ7%24MZ5W%24R.jpg" alt="First slide [900x500]" src="http://7u2mbi.com1.z0.glb.clouddn.com/%E7%BD%91%E5%8F%8B%E4%B8%8A%E4%BC%A0/%5D2%7B~%249Y_SHGM%40IJ7%24MZ5W%24R.jpg">
+							</div>
+						</div>
+						<a class="left carousel-control" href="#" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+						</div>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+	<script>
+	(function($){
+		//包括选中以及切换
+		$.fn.Slide = function(options){
+			var dft={
+				'preview':'',//预览区域
+				'url':'http://zard.sinaapp.com/api/pic.php',//获取数据接口
+				'refresh':''//刷新
+			}
+			var ops = $.extend(dft,options);
+			_this = $(this);
+			__this = this;
+			var current = 0,total=8;
+			this.get=function(n){//获取数据
+				$.getJSON(ops.url+'?n='+n,function(r){
+					//填充预览窗口
+					ops.preview.children().remove();
+					var item_list = _this.find('.carousel-inner');
+					item_list.children().remove();
+					$.each(r,function(i,e){
+						var c=(i==0?'active':'');
+						ops.preview.append("<li class="+c+"><img data-id="+i+" src='"+e['url']+"'></li>");
+						item_list.append('<div class="item '+c+'"><img  src="'+e['url']+'"></div>');
+					});
+					//填充图片轮播区域
+				});
+				//current归0
+				current=0;
+			}
+			this.prev=function(){//上一张
+				current=(current==0?7:(current-1));
+				this.go(current);
+			},
+			this.next=function(){//下一张
+				current = (current+1);
+				if(current==8)__this.get(8);
+				else __this.go(current);
+			},
+			this.go=function(i){//切换
+			console.log(i);
+				ops.preview.children().removeClass('active');
+				ops.preview.children(':eq('+i+')').addClass('active');
+				var item_list = _this.find('.carousel-inner');
+				item_list.children().removeClass('active');
+				item_list.children(':eq('+i+')').addClass('active');
+			}
+			$('#gallery ul').click(function(e){
+			console.log(e.target.tagName)
+				if(e.target.tagName=='IMG'){
+					var index = $(e.target).attr('data-id');
+					current=parseInt(index);
+					__this.go(index);
+				}
+			});
+			ops.refresh.click(function(){
+				__this.get(total);
+			});
+			$('.carousel-control').click(function(e){
+				if($(e.target).attr('data-slide')=='prev')__this.prev();
+				else if($(e.target).attr('data-slide')=='next')__this.next();
+			});
+			this.get(total);
+		}
+	})(jQuery);
+	$(function(){
+		$('#carousel-example-generic').Slide({
+			'preview':$('#gallery ul'),
+			'refresh':$('#gallery-refresh>button')
+		});
+	});
+	</script>
+     
+     
+     <!---音乐-->
+     <!---音乐--->
+
+	<style type='text/css'>
+	
+	</style>
+	<div id='music'>
+		<div class='line'>
+			<div class='music-box'>
+				<div class='top'>
+					<div class='left fleft'>
+                        <img src='http://tb.himg.baidu.com/sys/portrait/item/d34f657375796d6c6020' width=70px height=70px />
+                        <audio src='http://pnp.51t.com/23/2070/58459/92018107.m4a' autoplay />
+					</div>
+					
+					<div class='right fleft'>
+						
+						
+						<div class='line song-control' style='height:30px;'>
+							<ul>
+                                <li><span class='pp glyphicon glyphicon-play' title='开始/暂停'></span></li>
+								<li><span class='forward glyphicon glyphicon-forward' title='下一首'></span></li>
+                                <li><span class='lrc-list glyphicon glyphicon-text-width' title='切换歌词/列表'></span></li>
+                                <li><span class='play-type glyphicon glyphicon-music' title='播放方式'></span></li>
+                                <li>
+                                    <span class='share-qzone glyphicon glyphicon-share' title='分享到QQ空间'></span>
+                                </li>
+								
+							</ul>
+						</div>
+							
+						
+					</div>
+					
+				</div>
+				<div class='middle'>
+					<div class='line song-info' style='height:24px;background:#fff;'>
+							<div class='song-name fleft'><span>AKB48-柠檬の年顷</span></div>
+                        
+							<div class='song-time fright text-right'><span class='current-time'>00:00</span>/<span class='total-time'>00:00</span></div>
+					</div>
+						<div class="progress" style='height:5px;margin-bottom:0;'>
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+						<span class="sr-only">60% Complete</span>
+						</div>
+						</div>
+
+				</div>
+				<div class='song-center'>
+				<div class='song-wrap'>
+					<!---歌曲列表-->
+					<div class='song-list'>
+						<ul>
+							
+						</ul>
+					</div>
+					<!---歌词部分--->
+					<div class='song-lrc'>
+						<div class='lrc-content'>
+						<p class='text-center'>歌词</p>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class='bottom'>
+					<p class='text-right'>ZARD歌曲全集</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<script type='text/javascript'>
+	(function($){
+		$.fn.MusicPlayer=function(options){
+			var dft = {
+                songListUrl:'api/api.php',//加载列表
+                start:'',//初始化时播放第几首
+                songInfoUrl:'api/api.php?url=music.163.com/api/song/detail?ids=',
+                lrcUrl:'api/api.php?lrc=music.163.com/api/song/media?id=',//获取歌词地址
+			};
+			var _this = this;
+			var mn = $('#music');
+			//缓存各个节点
+			var n_songName = mn.find('.song-name'),//歌曲节点
+				n_totalTime = mn.find('.total-time'),//总时间节点
+				n_currentTime = mn.find('.current-time'),//当前时间节点
+				n_pic = mn.find('img'),//图片
+				n_progress = mn.find('.progress-bar'),//进度条
+				n_pp = mn.find('.pp'),//开始/暂停
+				n_ll = mn.find('.lrc-list'),//歌词/列表切换
+				n_forward = mn.find('.forward'),//下一首
+                n_share = mn.find('.share-qzone'),//分享到qq空间
+				n_list = mn.find('ul:eq(1)'),
+				n_wrap = mn.find('.song-wrap'),
+				n_lrc = mn.find('.lrc-content'),
+				n_audio = mn.find('audio'),
+            	n_playType = mn.find('.play-type');
+			//当前播放歌曲信息
+			var current={
+				index:0,//索引
+				id:0,//歌曲id
+				name:'',//歌曲名
+				t:0,	//当前歌曲总时间
+				timer:0,	//定时器
+				len:0,//总长度
+				lrc:{
+					words: [],
+					times: [],
+					data:[]
+				}
+			};
+            var playType = 0;//播放方式，初始为0
+            var playTypeList = ['music','repeat','random'];
+			//事件绑定
+			$('.song-list ul').on('click','li',function(e){
+				
+				current.index = parseInt($(e.target).attr('data-index'));
+				_this.go(current);
+			});
+			n_pp.click(function(e){
+				if($(e.target).hasClass('glyphicon-play'))_this.play();
+				else if($(this).hasClass('glyphicon-pause'))_this.pause();
+			});
+			n_ll.click(function(e){
+				if($(e.target).hasClass('glyphicon-text-width')){
+					$(e.target).removeClass('glyphicon-text-width').addClass('glyphicon-list');
+					n_wrap.animate({'margin-left':'-100%'},500);
+				}else if($(e.target).hasClass('glyphicon glyphicon-list')){
+					$(e.target).removeClass('glyphicon-list').addClass('glyphicon-text-width');
+					n_wrap.animate({'margin-left':'0'},500);
+				}
+			});
+            n_forward.click(function(e){
+               
+              _this.next();
+                
+			});
+            n_playType.click(function(e){
+            	 //_this.next();换成顺序还是随机播放，循环播放
+                
+                //glyphicon-repeat,glyphicon-random
+                n_playType.removeClass('glyphicon-'+playTypeList[playType]);
+                playType = (playType+1)%playTypeList.length;
+                n_playType.addClass('glyphicon-'+playTypeList[playType]);
+            });
+            n_share.click(function(e){
+                var netid = current.id;
+                var pic =n_pic.attr('src');
+                var songIndex = current.name.match(/\d+/);
+                var songname = current.name.replace(songIndex+'.','');
+                var p = {
+                    url:'http://zard.sinaapp.com/#music'+songIndex,
+                    showcount:'1',/*是否显示分享总数,显示：'1'，不显示：'0' */
+                    desc:'我正在听ZARD的歌曲《'+songname+'》，也推荐你来听哦^^',/*默认分享理由(可选)*/
+                    summary:'ZARD',/*分享摘要(可选)*/
+                    title:songname,/*分享标题(可选)*/
+                    site:'ZARD',/*分享来源 如：腾讯网(可选)*/
+                    pics:pic, /*分享图片的路径(可选)*/
+                    style:'202',
+                    width:105,
+                    height:31
+                };
+                var s = [];
+                for(var i in p){
+                    s.push(i + '=' + encodeURIComponent(p[i]||''));
+                }
+                //window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?'+s.join('&'));
+                window.open('http://connect.qq.com/widget/shareqq/index.html?'+s.join('&'));
+            });
+			this.ops = $.extend(dft,options);
+			
+			//初始化
+			this.init=function(callback){
+				//获取歌曲列表
+				var url = this.ops.songListUrl;
+				$.getJSON(url,function(r){
+					var l = r.length;
+					current.len = l;
+					for(var i=0;i<l;i++){
+						$('.song-list ul').append('<li data-index='+i+' data-id='+r[i].songId+'>'+(i+1)+'.'+r[i].songName+'</li>')
+					}
+                    
+                    setTimeout(callback,500);
+				});
+			};
+			
+			
+			this.go=function(song){//播放歌曲
+                
+				//移除
+				n_list.children().removeClass('active');
+				n_list_p = n_list.children(':eq('+song.index+')');
+				n_list_p.addClass('active');
+				
+				current.id = n_list_p.attr('data-id');
+				current.name = n_list_p.html();
+				
+				//获取歌曲信息
+				$.getJSON(this.ops.songInfoUrl+'['+song.id+']',function(r){
+					var songInfo = r.songs[0];
+                    var name = songInfo.alias[0]||songInfo.name;
+					var mp3 = songInfo.mp3Url;
+					var pic = songInfo.album.picUrl;
+					var ttime = timeParse(songInfo.duration);
+					console.log('时间'+songInfo.duration+'\n'+ttime)
+					
+					n_songName.html(name);
+					n_pic.attr('src',pic);
+					n_audio.attr('src',mp3);
+					current.t = songInfo.duration;
+					n_totalTime.html(ttime);
+                    //滚动到
+                    
+                    var liH = parseFloat($('.song-list').find('li:eq(0)').css('height'));
+                    var i = current.index;
+                    var songNode = $('.song-list');
+                    //songNode.scrollTop(liH*(i-5>0?i-5:0));
+                    songNode.animate({'scrollTop':(liH*(i-5>0?i-5:0))+'px'},400);
+                    
+					_this.play();
+					
+				});
+				//获取歌词
+        		n_lrc.html("");
+                n_lrc.animate({'margin-top':'50px'});
+				$.getJSON(this.ops.lrcUrl+song.id,function(r){
+                    var lrc_s = r.lyric||'[00:01]此歌曲暂无歌词~';
+					var lrc = parseLrc(lrc_s);
+					current.lrc =lrc;
+					
+					var words = lrc.words, times = lrc.times, data = lrc.data;
+					var origTop=0,stepHeight=0;
+					var len = times.length,i = 0,str='';
+					for(;i<len;i++){
+					var t = times[i],w = words[t];
+					n_lrc.append('<p class=text-center data-lrctime="'+t+'">'+w+'</p>');
+					
+					}
+					data = [data.ti,data.ar,data.al].filter(function(a){return a!==''});
+					
+					
+				});
+			}
+			this.play=function(){
+                clearInterval(current.timer);
+				n_pp.removeClass('glyphicon-play').addClass('glyphicon-pause');
+				n_audio[0].play();
+				current.timer  = setInterval(updateProgress,1000);
+			},
+			this.pause=function(){
+				n_pp.removeClass('glyphicon-pause').addClass('glyphicon-play');
+				n_audio[0].pause();
+				clearInterval(current.timer);
+                //current.timer = 0;
+				
+			},
+			this.next=function(){//下一首
+                this.pause();
+				var i = current.index;
+				var l = current.len;
+                console.log(current.index);
+				current.index = (i+1)%l;
+                
+				this.go(current);
+                
+			}
+            this.replay=function(){
+            	n_audio.load();
+            }
+			function updateProgress(){
+				var t=current.t;
+				$ctime = n_audio[0].currentTime*1000;
+				$ct = timeParse($ctime);
+				n_currentTime.html($ct);
+				console.log('进度'+t+'%');
+				n_progress.css('width',100*$ctime/t+'%');
+				
+				//设置歌词
+				for(var i=0;i<current.lrc.times.length;i++){
+					var tt = current.lrc.times;
+					if($ctime>=tt[i]&&$ctime<tt[i+1]){
+						var n_p = n_lrc.find('p:eq('+i+')');
+						n_p.css({'color':'#00ff00'});
+						n_lrc.find('p:eq('+(i-1)+')').css({'color':'#aaa'});
+						n_lrc.animate({'margin-top':'-'+27*i+'px'});
+						
+						}
+				}
+                if(n_audio[0].ended){
+                	//停止,则播放下一首或者随机播放一首
+                    console.log('停止了'+playType);
+                    var sl = current.len;
+                   	var randIndex = Math.floor((sl+1)*Math.random());
+                    switch(playType){
+                        case 0:_this.next();break;
+                        case 1:_this.replay();break;
+                        case 2:current.index = (randIndex+1)%sl;_this.go(current);break;
+                        default:
+                    }
+                   	
+                    
+                }
+				
+			}
+			function timeParse(t){
+				//获取分钟
+				var m =Math.floor(t/60000);
+				m = m>9?m:('0'+m);
+				var s = Math.round((t%60000)/1000);
+				s = s>9?s:('0'+s);
+				return m+':'+s;
+			}
+			//解析歌词
+	function parseLrc(lrc) {
+		var arr = lrc.split(/[\r\n]/), 
+		  len = arr.length, 
+		  words = {}, 
+		  times = [], i = 0;
+		var musicData = {ti:'',ar:'',al:''};
+		for (; i < len;) {
+			var temp,doit = true,
+			    str = decodeURIComponent(arr[i]), 
+                word = str.replace(/\[\d*:\d*((\.|\:)\d*)*\]/g, '');
+			
+            'ti ar al'.replace(/\S+/g,function(a){
+				
+				if(doit && musicData[a]===''){
+					temp = str.match(new RegExp('\\['+a+'\\:(.*?)\\]'));
+					if(temp && temp[1]){
+						doit = false;
+						musicData[a] = temp[1]; 
+					}
+				}
+			});
+			
+			if(word.length===0){
+				word = "…… ……";
+			}
+            if(str.match(/\[(\d*):(\d*)([\.|\:]\d*)*\]/g)){
+				str.replace(/\[(\d*):(\d*)([\.|\:]\d*)*\]/g, function() {
+					var min = arguments[1] | 0, 
+					sec = arguments[2] | 0, 
+					time = min * 60 + sec,
+					p = times.push(time * 1e3);
+				words[times[--p]] = word.trim();
+				});
+            }else{
+                //针对网易云音乐的歌词
+               
+                var  time = 180*i/len;//分3分钟内放完
+                times.push(time*1e3);
+                words[time*1e3]=word.trim();
+            }
+			i++;
+		}
+		times.sort(function(a, b) {
+			return a - b;
+		});
+		return {
+			words: words,
+			times: times,
+			data:musicData
+		};
+	}
+            //初始化
+            this.init(function(){
+                var i = location.href.match(/\d+/);
+                if(i){
+                    var starti = parseInt(i[0])-1;
+                    $('.menu li[href=#music]').trigger('click');
+                	console.log('播放第'+starti+'首')
+                    var songNode = $('.song-list');
+                	songNode.children().children('li:eq('+starti+')').trigger('click');
+                    
+                }
+            
+            });
+            //播放第N首
+            
+		}
+       
+        $('#music').MusicPlayer();
+	})(jQuery);
+	</script>
+	
+	<!----关于--->
+	<div id='about'>
+		<div class='line' style='min-height:100px;'>
+			<div class='col-md-2 col-xs-12'>
+				<ul class='about-menu'>
+					<li class='tieba'>贴吧</li>
+					<li class='wechat'>微信</li>
+					<li class='qq'>QQ</li>	
+				</ul>
+			</div>
+			<div class='col-md-10 col-xs-12'>
+				<div class='line tieba-content'>
+					<ul>
+						<li>
+							<a href='http://tieba.baidu.com/f?ie=utf-8&kw=zard' target="_blank">
+								<div class='box'>
+									<div class='url-pic'><img width=100% height=100% src='http://m.tiebaimg.com/timg?wapp&quality=80&size=b150_150&subsize=20480&cut_x=0&cut_w=0&cut_y=0&cut_h=0&sec=1369815402&srctrace&di=cba18935fcf1b709e66801265c3032c3&wh_rate=null&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fpic%2Fitem%2F960a304e251f95ca10fd515ac8177f3e660952d6.jpg'></div>
+									<div class='url-info'>ZARD吧</div>
+								</div>
+							</a>
+						</li>
+						
+						<li>
+							<a href='http://tieba.baidu.com/f?ie=utf-8&kw=坂井泉水' target="_blank">
+								<div class='box'>
+									<div class='url-pic'><img width=100% height=100% src='http://m.tiebaimg.com/timg?wapp&quality=80&size=b150_150&subsize=20480&cut_x=0&cut_w=0&cut_y=0&cut_h=0&sec=1369815402&srctrace&di=25fab98291b68ac997dbc39ce7a5e351&wh_rate=null&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fpic%2Fitem%2F1b2af71349540923edadc9779358d109b2de490a.jpg'></div>
+									<div class='url-info'>坂井泉水吧</div>
+								</div>
+							</a>
+						</li>
+						
+						<li>
+							<a href='http://tieba.baidu.com/f?kw=suoying&fr=telanx' target="_blank">
+								<div class='box'>
+									<div class='url-pic'><img width=100% height=100% src='http://m.tiebaimg.com/timg?wapp&quality=80&size=b150_150&subsize=20480&cut_x=0&cut_w=0&cut_y=0&cut_h=0&sec=1369815402&srctrace&di=6eba38095869aef71e36994faab64579&wh_rate=null&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fpic%2Fitem%2F9f510fb30f2442a740ac862dd043ad4bd0130293.jpg'></div>
+									<div class='url-info'>suoying吧</div>
+								</div>
+							</a>
+						</li>
+						
+						<li>
+							<a href='http://wezard.net' target="_blank">
+								<div class='box'>
+									<div class='url-pic'><img width=100% height=100% src='http://www.wezard.net/20th/images/logo_on.png'></div>
+									<div class='url-info'>ZARD官网</div>
+								</div>
+							</a>
+						</li>
+							
+							<li>
+							<a href='http://wezard.net.cn' target="_blank">
+								<div class='box'>
+									<div class='url-pic'><img width=100% height=100% src='http://www.wezard.net/20th/images/logo_on.png'></div>
+									<div class='url-info'>ZARD中文网</div>
+								</div>
+							</a>
+						</li>
+                        
+                        <li>
+                            <a href='http://zard.sinaapp.com/cloud/pic.html' target="_blank">
+								<div class='box'>
+									<div class='url-pic'><img width=100% height=100% src='http://7u2k6l.com1.z0.glb.clouddn.com/zard.jpg'></div>
+									<div class='url-info'>ZARD图片管理</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+					
+				</div>
+				<div class='line wechat-content hidden'>
+                    <h5 class='text-muted'>新浪微博</h5>
+                    <p  style='line-height:45px;'>微博搜索<a href='http://weibo.com/u/1751906385?topnav=1&wvr=6&topsug=1' target='_blank'><strong>坂井泉水_ZARD</strong></a>添加关注。</p>
+					<h5 class='text-muted'>微信订阅号</h5>
+					<p  style='line-height:45px;'>微信搜索<strong>ZARD</strong>或扫描二维码添加关注。</p>
+                    <p class='text-center'><img width='250px' src='pic/wechat.jpg'></p>
+                    
+                    
+				</div>
+				<div class='line qq-content hidden'>
+					<h5 class='text-muted'>QQ群</h5>
+					<p style='line-height:45px;'>Soffio~Taste ZARD 群号:<strong>65367929</strong></p>
+					
+					<h5 class='text-muted'>QQ部落</h5>
+					<p style='line-height:45px;'>手机qq进入部落搜索<strong>ZARD</strong>添加关注(微信用户关注订阅号后也可直接进入qq部落)</p>
+					<p class='text-center'>
+                        <img src='pic/qq.png' >
+					</p>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+	
+	<!--音乐盒-->
+	<!----图库--->
+</div>
+ 
+ <div id='footer'>
+          <p class='text-center'>ZARD® 2015 Powered By Telanx</p>
+  </div>
+<script type='text/javascript'>
+//主菜单
+(function($){
+	$('.content').children().hide();
+	$('#index').fadeIn();
+	$('.menu ul').click(function(e){
+		var _this = $(e.target);
+		$.each($(this).children(),function(i,e){
+			$(e).removeClass('active');
+		});
+		_this.addClass('active');
+		//隐藏所有
+		$('.content').children().hide();
+		$(_this.attr('href')).fadeIn();
+		//调整背景颜色
+		var cs='';
+		switch(_this.attr('href')){
+			case '#about':cs='rgba(255,255,255,0.2)';break;
+			case 'music':cs='rgb(0,0,0)';break;
+			case 'gallery':cs='rgb(200,100,30)';break;
+			default:cs='rgb(20,139,205)'
+		}
+		$('.content').css('background',cs);
+	});
+})(jQuery);
+//关于栏目
+(function($){
+	//初始化
+	$('.about-menu .tieba').addClass('selected');
+	$('.about-menu').click(function(e){
+		var _this = $(e.target);
+		//清楚所有并添加当前样式
+		$.each($(this).children(),function(i,e){
+			$(e).removeClass('selected');
+		});
+		_this.addClass('selected');
+		
+		var ct = $(this).parent().next().children();//具体内容
+		$.each(ct,function(i,e){
+			$(e).addClass('hidden');
+		});
+		if(_this.hasClass('tieba')){
+			
+			$('.tieba-content').removeClass('hidden').fadeIn();
+		}else if(_this.hasClass('qq')){
+			$('.qq-content').removeClass('hidden').fadeIn();
+		}else if(_this.hasClass('wechat')){
+			$('.wechat-content').removeClass('hidden').fadeIn();
+		}
+	});
+})(jQuery);
+</script>
+    
+   <script type='text/javascript'>
+   //打印机效果
+   (function ($) {
+		$.fn.Print = function(options,callback) { //定义插件的名称，这里为userCp
+			var dft = {
+			//以下为该插件的属性及其默认值
+				speed:100,//打印文字间隔
+				sspeed:1000,//字符间隔停顿
+				text:'Hello world'
+			};
+			var ops = $.extend(dft,options);
+			// 正则替换代码行之间添加的多个空格，不去除换行输出会有明显的停顿：实际是在输出多个空格
+			var str=ops.text.replace(/(\s){2,}/g," ");
+			var index = 0;
+			var _this = $(this);
+			console.log(ops.text);
+			var timer = function() {
+				var args=arguments;
+				var current = str.slice(index, index+1);
+				// html标签完整输出,如：<p>
+				if (current == '<'){
+					index = str.indexOf('>', index) + 1;
+				}
+				else{
+				index++;
+				}
+				//位运算符: 根据setInterval运行奇偶次来判断是否加入下划线字符“_”，使输入效果更逼真
+				if (index < str.length-1){ //打印字符倒数第2个字符开始，不加下划线字符，以防止结束符可能会多输出一下划线字符
+					_this.html(str.substring(0, index) + (index & 1 ? '_' : ''));
+					setTimeout(args.callee,ops.speed);
+				}else{
+					_this.html(str.substring(0, index));
+					clearTimeout(timer);
+					console.log('加载完毕');
+					callback();
+				};
+				
+			
+			}
+			setTimeout(timer,ops.speed);
+		
+		}
+	})(jQuery);
+	$('.zard-btn').hide();
+	$('.left-text').Print({text:$('.left-text').html(),speed:100},function(){$('.zard-btn').fadeIn();});
+   </script>
+   <script type='text/javascript'>
+	(function($){
+		$.fn.Page = function(options){
+			var dft = {
+			//以下为该插件的属性及其默认值
+				page:['index','intro1'],
+				music:['http://pnp.51t.com/23/2070/58459/92018107.m4a','http://101.4.136.35:9999/m1.music.126.net/SkSqunZA88y9GLd1gziwTg==/1271035441712876.mp3','http://sc.111ttt.com/up/mp3/318145/7CD91FFDCE4A7FCD73F720254ABA704B.mp3']
+			};
+			var ops = $.extend(dft,options);
+			var current =0;
+			var len = ops.page.length;
+			var _this = $(this);
+			_this.find('.btn-next').click(function(){
+				current=(current+1)%len;
+				_this.go(current);
+			});
+			_this.find('.btn-prev').click(function(){
+				current=(current==0?(len-1):(current-1));
+				_this.go(current);
+			});
+			_this.go = function(i){
+					var w = parseInt($('.zard-content').css('width'));
+					
+					_this.animate({'margin-left':(-w*i)+'px'},500);
+					$('audio').attr('src',ops.music[i]).play();
+			}
+		}
+		
+	})(jQuery);
+	$('.wrap').Page({page:['index','intro1','intro2','intro3','intro4']});
+	</script>
+      <script>
+    (function () {
+        window.baiduImageTalk = {'token': 'awfmktc533r2'};
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.src = 'http://bcscdn.baidu.com/public03/imageplus/tuhua/common_loader.js?cache=' + Math.ceil(new Date() / 3600000);
+        document.getElementsByTagName('head')[0].appendChild(s);
+    })();
+</script>
+     
+  </body>
 </html>
