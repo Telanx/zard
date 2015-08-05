@@ -1,5 +1,5 @@
-# ![ZARD](http://www.wezard.net/20th/images/logo_on.png)zard
+# ![ZARD](http://www.wezard.net/20th/images/logo_on.png)
 [http://zard.sinaapp.com](http://zard.sinaapp.com/)
->This is a Chinese website about ZARD(Izumi Sakai or 坂井泉水).
+>This is a Chinese website about ZARD(Izumi Sakai/坂井泉水/蒲池幸子).
 >
 >Powered By Telanx 2015
