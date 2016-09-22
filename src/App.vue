@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-      <frame-header></frame-header>
-      <transition name="fade" mode="out-in">
-        <router-view keep-alive></router-view>
-      </transition>
+      <frame-header :page="$route.page"></frame-header>
+      <router-view keep-alive></router-view>
       <frame-footer>
         <p slot="cpy" class="text-center">Powered By Telanx | 2015</p>
       </frame-footer>

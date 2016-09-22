@@ -14,16 +14,20 @@ var router = new Router()
 
 router.map({
   '/home': {
-    component: Home
+    component: Home,
+    page: 'home'
   },
   '/gallery': {
-    component: Gallery
+    component: Gallery,
+    page: 'gallery'
   },
   '/music': {
-    component: Music
+    component: Music,
+    page: 'music'
   },
   '/about': {
-    component: About
+    component: About,
+    page: 'about'
   }
 })
 

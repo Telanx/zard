@@ -6,10 +6,10 @@
          </div>
          <div class='menu'>
              <ul>
-                 <li class="{{ page === 'index'?'active':'' }}"><a href='#home'>首页</a></li>
-                 <li class="{{ page === 'music'?'active':'' }}"><a href='#music'>音乐盒</a></li>
-                 <li class="{{ page === 'gallery'?'active':'' }}"><a href='#gallery'>图库</a></li>
-                 <li class="{{ page === 'about'?'active':'' }}"><a href='#about'>关于</a></li>
+                 <li class="{{ page === 'home'?'active':'' }}"><a v-link="{ path: '/home', params:{page:'home'} }">首页</a></li>
+                 <li class="{{ page === 'music'?'active':'' }}"><a v-link="{ path: '/music', params:{page:'music'} }">音乐盒</a></li>
+                 <li class="{{ page === 'gallery'?'active':'' }}"><a v-link="{ path: '/gallery', params:{page:'gallery'} }">图库</a></li>
+                 <li class="{{ page === 'about'?'active':'' }}"><a v-link="{ path: '/about', params:{page:'about'} }">关于</a></li>
              </ul>
          </div>
          <div class='text-logo'>
@@ -17,12 +17,6 @@
 				<svg version="1.1"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox = "0 0 60 23">
-					<!--
-					D Path-
-					M459,170 L459,27 518,28 C518,28 569,44 590,87 L590,103 C590,103 571,147 518,170 L459,170
-					内环
-					M491,145 L491,52 512,53  C512,53,549,69,556,90  L556,105 C556,105 554,132 512,146  L491,145
-					--->
 					<path id='path' fill="none"
 					stroke = "rgb(19,191,255)"
 					stroke-width = "0.4"
@@ -36,7 +30,7 @@
 </template>
 <script>
 export default {
-    props: ['page']
+	props:['page']
 }
 </script>
 

@@ -59,6 +59,9 @@
 	width:400px;
 	height:70px;
 }
+.menu a {
+	display: block;
+}
 .menu li {
 	float:left;
 	width:60px;
@@ -72,7 +75,7 @@
 	box-shadow:0 0 1px #000;
 }
 .menu .active {
-	color:rgb(17, 151, 226);
+	box-shadow: 0 0 1px #aaa;
 }
 .right-pic p {
 	line-height:70px;
