@@ -1,7 +1,9 @@
 <template>
   <div id="app">
       <frame-header :page="$route.page"></frame-header>
-      <router-view keep-alive></router-view>
+      <router-view keep-alive 
+        transition="fade"
+        transition-mode="out-in"></router-view>
       <frame-footer>
         <p slot="cpy" class="text-center">Powered By Telanx | 2015</p>
       </frame-footer>
@@ -12,12 +14,17 @@
 import Home from './components/Home.vue'
 import FrameHeader from './components/FrameHeader.vue'
 import FrameFooter from './components/FrameFooter.vue'
+import $ from 'jquery'
 
 export default {
   components: {
     FrameHeader,
     Home,
     FrameFooter
+  },
+  created: function () {
+    console.log('組件構建完成')
+    console.log(Home)
   }
 }
 </script>
