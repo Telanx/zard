@@ -1,5 +1,5 @@
 <template>
-	<div id='index' class='wrap'>
+	<div id='index' class='wrap mytran-transition'  :style="{ marginLeft: marginLeft+'px'}">
 		<div class='index zard-content'>
 			<div class='container line'>
 				<div class='left-text col-md-7'>
@@ -22,7 +22,7 @@
 				</div>
 			</div>
 			<div class='zard-btn line text-center'>
-				<button class='btn btn-next'>开启ZARD音乐之旅</button>
+				<button class='btn btn-next' @click="next">开启ZARD音乐之旅</button>
 			</div>
 		</div>
 		<div class='intro1 zard-content'>
@@ -34,7 +34,7 @@
 					灌篮高手主题曲《我的朋友》
 				</div>
 
-				<div class='line text-center'><button class='btn btn-next'>Next</button></div>
+				<div class='line text-center'><button class='btn btn-next' @click="next">Next</button></div>
 			</div>
 		</div>
 
@@ -50,7 +50,7 @@
 
 					</div>
 				</div>
-				<div class='line text-center'><button class='btn btn-next'>Continue</button></div>
+				<div class='line text-center'><button class='btn btn-next' @click="next">Continue</button></div>
 			</div>
 		</div>
 		<div class='intro3 zard-content'>
@@ -65,7 +65,7 @@
 
 					</div>
 				</div>
-				<div class='line text-center'><button class='btn btn-next'>Continue</button></div>
+				<div class='line text-center'><button class='btn btn-next' @click="next">Continue</button></div>
 
 			</div>
 		</div>
@@ -82,10 +82,33 @@
 
 					</div>
 				</div>
-				<div class='line text-center'><button class='btn btn-next'>More</button></div>
-
-
+				<div class='line text-center'><button class='btn btn-next' @click="next">More</button></div>
 			</div>
 		</div>
 	</div>
 </template>
+<script>
+	export default {
+		data(){
+			return {
+				currentPage: 1,
+				marginLeft: 0
+			}
+		},
+		methods:{
+			next(e){
+				this.currentPage = ++this.currentPage% 5
+				this.go(this.currentPage)
+			},
+			go(idx){
+				this.marginLeft = -(this.currentPage) * window.innerWidth;
+			}
+		}
+	}
+</script>
+
+<style>
+.mytran-transition { 
+	transition: all 0.3s ease;  
+} 
+</style>

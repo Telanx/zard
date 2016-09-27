@@ -4,7 +4,12 @@
 	font-family:"微软雅黑";
 }
 
-// transition
+#app {
+	width: 100%;
+	overflow: hidden;
+}
+
+//transition
 .fade-transition {
   transition: opacity .3s ease;
 }
