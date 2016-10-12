@@ -11,6 +11,7 @@ import App from './App'
 
 Vue.use(Router)
 Vue.use(VueResource)
+Vue.http.options.emulateJSON = true;
 // 注册transition
 Vue.transition('print', {
 	beforeEnter: function () {

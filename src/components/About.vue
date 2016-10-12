@@ -1,6 +1,6 @@
 <template>
     <!----关于--->
-	<div id='about'>
+	<div id='about' class="mytran-transition">
 		<div class='line' style='min-height:100px;'>
 			<div class='col-md-2 col-xs-12'>
 				<ul class='about-menu'>

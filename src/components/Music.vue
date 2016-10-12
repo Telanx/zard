@@ -1,5 +1,5 @@
 <template>
-    <div id='music'>
+    <div id='music' class="mytran-transition">
 		<div class='line'>
 			<div class='music-box'>
 				<div class='top'>
@@ -69,7 +69,8 @@ export default {
 	ready() {
 		// 拉取数据并渲染
 		this.$http.get('../../data/songs.json').then(function(data) {
-			this.songs = data
+			console.log(data);
+			this.songs = data.body
 		})
 	},
 	data() {

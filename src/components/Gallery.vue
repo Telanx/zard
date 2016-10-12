@@ -1,5 +1,5 @@
 <template>
-    <div id='gallery'>
+    <div id='gallery' class="mytran-transition">
 		<div class='container'>
 			<div class='top pic-preview'>
 				<ul>
