@@ -2,7 +2,7 @@
 	<div id='index' class='wrap mytran-transition'  :style="{ marginLeft: marginLeft+'px'}">
 		<div class='index zard-content'>
 			<div class='container line'>
-				<div class='left-text col-md-7'>
+				<div class='left-text col-md-7' v-if="show" transition="print">
 					<h4 style='margin-bottom:20px;'>きっと忘れない，一定不会忘记。</h4>
 					<p>一定不会忘记 她突然离世。</p>
 					<p>即使很少公开露面也同样被许多人所喜爱着，她的歌声始终支撑着我们。</p>
@@ -88,11 +88,20 @@
 	</div>
 </template>
 <script>
+	import $ from 'jquery'
 	export default {
+		created() {
+			// 组件被创建
+		},
+		ready() {
+			console.log('组件渲染完毕');
+			this.show = true;
+		},
 		data(){
 			return {
 				currentPage: 1,
-				marginLeft: 0
+				marginLeft: 0,
+				show: false
 			}
 		},
 		methods:{

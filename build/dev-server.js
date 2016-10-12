@@ -56,6 +56,9 @@ app.use(hotMiddleware)
 var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 app.use(staticPath, express.static('./static'))
 
+// 托管data文件
+app.use('/data', express.static('data'))
+
 module.exports = app.listen(port, function (err) {
   if (err) {
     console.log(err)

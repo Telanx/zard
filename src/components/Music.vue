@@ -4,13 +4,11 @@
 			<div class='music-box'>
 				<div class='top'>
 					<div class='left fleft'>
-                        <img src='http://tb.himg.baidu.com/sys/portrait/item/d34f657375796d6c6020' width=70px height=70px />
-                        <audio src='http://pnp.51t.com/23/2070/58459/92018107.m4a' autoplay></audio>
+                        <img :src='default.pic' width=70px height=70px />
+                        <audio :src='default.mp3' autoplay></audio>
 					</div>
 					
 					<div class='right fleft'>
-						
-						
 						<div class='line song-control' style='height:30px;'>
 							<ul>
                                 <li><span class='pp glyphicon glyphicon-play' title='开始/暂停'></span></li>
@@ -30,7 +28,7 @@
 				</div>
 				<div class='middle'>
 					<div class='line song-info' style='height:24px;background:#fff;'>
-							<div class='song-name fleft'><span>AKB48-柠檬の年顷</span></div>
+							<div class='song-name fleft'><span>{{default.song}}</span></div>
                         
 							<div class='song-time fright text-right'><span class='current-time'>00:00</span>/<span class='total-time'>00:00</span></div>
 					</div>
@@ -45,8 +43,8 @@
 				<div class='song-wrap'>
 					<!---歌曲列表-->
 					<div class='song-list'>
-						<ul>
-							
+						<ul v-for="r in songs">
+							<li data-index='{{r.id}}' data-id='{{r.netid}}'>{{(r.id)+'.'+r.title}}</li>
 						</ul>
 					</div>
 					<!---歌词部分--->
@@ -65,5 +63,25 @@
 		</div>
 	</div>
 </template>
-<script></script>
+<script>
+import $ from 'jquery'
+export default {
+	ready() {
+		// 拉取数据并渲染
+		this.$http.get('../../data/songs.json').then(function(data) {
+			this.songs = data
+		})
+	},
+	data() {
+		return {
+			default: {
+				pic: 'http://tb.himg.baidu.com/sys/portrait/item/d34f657375796d6c6020',
+				mp3: 'http://pnp.51t.com/23/2070/58459/92018107.m4a',
+				song: 'AKB48-柠檬の年顷'
+			},
+			songs: []
+		}
+	}
+}
+</script>
 <style></style>

@@ -1,0 +1,1034 @@
+[
+    {
+        id: 1,
+        title: "女でいたい",
+        netid: 22667715,
+        album: "Good-Bye My Loneliness"
+    },
+    {
+        id: 2,
+        title: "時間の翼",
+        netid: 22667580,
+        album: "時間（とき）の翼"
+    },
+    {
+        id: 3,
+        title: "Don't you see!{TV on-air ver}",
+        netid: 677243,
+        album: "Single"
+    },
+    {
+        id: 4,
+        title: "今すぐ会いに来て",
+        netid: 22667670,
+        album: "FOREVER YOU"
+    },
+    {
+        id: 5,
+        title: "ハイヒール脱ぎ捨てて",
+        netid: 22667664,
+        album: "FOREVER YOU"
+    },
+    {
+        id: 6,
+        title: "Forever you",
+        netid: 22667665,
+        album: "FOREVER YOU"
+    },
+    {
+        id: 7,
+        title: "もう逃げたりしないわ 想い出から",
+        netid: 22667671,
+        album: "FOREVER YOU"
+    },
+    {
+        id: 8,
+        title: "あなたを感じていたい",
+        netid: 22667669,
+        album: "FOREVER YOU"
+    },
+    {
+        id: 9,
+        title: "気楽に行こう",
+        netid: 22667673,
+        album: "FOREVER YOU"
+    },
+    {
+        id: 10,
+        title: "こんなにそばに居るのに",
+        netid: 22667672,
+        album: "FOREVER YOU"
+    },
+    {
+        id: 11,
+        title: "Just believe in love",
+        netid: 22667666,
+        album: "FOREVER YOU"
+    },
+    {
+        id: 12,
+        title: "I''m in love",
+        netid: 22667667,
+        album: "FOREVER YOU"
+    },
+    {
+        id: 13,
+        title: "瞳そらさないで",
+        netid: 22667668,
+        album: "FOREVER YOU"
+    },
+    {
+        id: 14,
+        title: "Oh Sugar Baby",
+        netid: 22667717,
+        album: "Good-Bye My Loneliness"
+    },
+    {
+        id: 15,
+        title: "愛は暗闇の中で",
+        netid: 22667714,
+        album: "Good-Bye My Loneliness"
+    },
+    {
+        id: 16,
+        title: "恋女の憂鬱",
+        netid: 22667712,
+        album: "Good-Bye My Loneliness"
+    },
+    {
+        id: 17,
+        title: "It's a Boy",
+        netid: 22667716,
+        album: "Good-Bye My Loneliness"
+    },
+    {
+        id: 18,
+        title: "Good-Bye My Loneliness",
+        netid: 22667713,
+        album: "Good-Bye My Loneliness"
+    },
+    {
+        id: 19,
+        title: "サヨナラは今もこの胸に居ます",
+        netid: 22667661,
+        album: "TODAY IS ANOTHER DAY"
+    },
+    {
+        id: 20,
+        title: "君がいたから",
+        netid: 22667652,
+        album: "TODAY IS ANOTHER DAY"
+    },
+    {
+        id: 21,
+        title: "マイ フレンド",
+        netid: 22667654,
+        album: "TODAY IS ANOTHER DAY"
+    },
+    {
+        id: 22,
+        title: "LOVE～眠れずに君の横顔ずっと見ていた～",
+        netid: 22667657,
+        album: "TODAY IS ANOTHER DAY"
+    },
+    {
+        id: 23,
+        title: "Oh my love",
+        netid: 22667677,
+        album: "OH MY LOVE"
+    },
+    {
+        id: 24,
+        title: "DAN DAN 心魅かれてく",
+        netid: 22667656,
+        album: "TODAY IS ANOTHER DAY"
+    },
+    {
+        id: 25,
+        title: "Top Secret",
+        netid: 22667676,
+        album: "OH MY LOVE"
+    },
+    {
+        id: 26,
+        title: "眠り",
+        netid: 22667653,
+        album: "TODAY IS ANOTHER DAY"
+    },
+    {
+        id: 27,
+        title: "心を開いて",
+        netid: 22667662,
+        album: "TODAY IS ANOTHER DAY"
+    },
+    {
+        id: 28,
+        title: "突然",
+        netid: 22667659,
+        album: "TODAY IS ANOTHER DAY"
+    },
+    {
+        id: 29,
+        title: "今日も",
+        netid: 22667658,
+        album: "TODAY IS ANOTHER DAY"
+    },
+    {
+        id: 30,
+        title: "Today is another day",
+        netid: 22667655,
+        album: "TODAY IS ANOTHER DAY"
+    },
+    {
+        id: 31,
+        title: "きっと忘れない",
+        netid: 22667674,
+        album: "OH MY LOVE"
+    },
+    {
+        id: 32,
+        title: "愛が見えない",
+        netid: 22667663,
+        album: "TODAY IS ANOTHER DAY"
+    },
+    {
+        id: 33,
+        title: "見つめていたいね",
+        netid: 22667660,
+        album: "TODAY IS ANOTHER DAY"
+    },
+    {
+        id: 34,
+        title: "夏を待つセイル{帆}のように",
+        netid: 22667513,
+        album: "君とのDistance"
+    },
+    {
+        id: 35,
+        title: "サヨナラまでのディスタンス",
+        netid: 22667517,
+        album: "君とのDistance"
+    },
+    {
+        id: 36,
+        title: "今日はゆっくり話そう",
+        netid: 22667511,
+        album: "君とのDistance"
+    },
+    {
+        id: 37,
+        title: "If you gimme smile",
+        netid: 22667683,
+        album: "OH MY LOVE"
+    },
+    {
+        id: 38,
+        title: "君とのふれあい",
+        netid: 22667508,
+        album: "君とのDistance"
+    },
+    {
+        id: 39,
+        title: "この愛に泳ぎ疲れても",
+        netid: 22667678,
+        album: "OH MY LOVE"
+    },
+    {
+        id: 40,
+        title: "セパレート・ウェイズ",
+        netid: 22667514,
+        album: "君とのDistance"
+    },
+    {
+        id: 41,
+        title: "雨に濡れて",
+        netid: 22667679,
+        album: "OH MY LOVE"
+    },
+    {
+        id: 42,
+        title: "Last Good-bye",
+        netid: 22667518,
+        album: "君とのDistance"
+    },
+    {
+        id: 43,
+        title: "星のかがやきよ",
+        netid: 22667519,
+        album: "君とのDistance"
+    },
+    {
+        id: 44,
+        title: "あなたに帰りたい",
+        netid: 22667680,
+        album: "OH MY LOVE"
+    },
+    {
+        id: 45,
+        title: "月に願いを",
+        netid: 22667515,
+        album: "君とのDistance"
+    },
+    {
+        id: 46,
+        title: "あなたと共に生きて行く",
+        netid: 22667510,
+        album: "君とのDistance"
+    },
+    {
+        id: 47,
+        title: "I can''t tell",
+        netid: 22667512,
+        album: "君とのDistance"
+    },
+    {
+        id: 48,
+        title: "来年の夏も",
+        netid: 22667681,
+        album: "OH MY LOVE"
+    },
+    {
+        id: 49,
+        title: "good-night sweetheart",
+        netid: 22667507,
+        album: "君とのDistance"
+    },
+    {
+        id: 50,
+        title: "君と今日の事を一生忘れない",
+        netid: 22667516,
+        album: "君とのDistance"
+    },
+    {
+        id: 51,
+        title: "Get U''re Dream",
+        netid: 22667574,
+        album: "時間（とき）の翼"
+    },
+    {
+        id: 52,
+        title: "この涙 星になれ",
+        netid: 22667572,
+        album: "時間（とき）の翼"
+    },
+    {
+        id: 53,
+        title: "promised you",
+        netid: 22667581,
+        album: "時間（とき）の翼"
+    },
+    {
+        id: 54,
+        title: "痛いくらい君があふれているよ",
+        netid: 22667577,
+        album: "時間（とき）の翼"
+    },
+    {
+        id: 55,
+        title: "窓の外はモノクローム",
+        netid: 22667576,
+        album: "時間（とき）の翼"
+    },
+    {
+        id: 56,
+        title: "もう少し あと少し…",
+        netid: 22667682,
+        album: "OH MY LOVE"
+    },
+    {
+        id: 57,
+        title: "お.も.ひ.で",
+        netid: 22667573,
+        album: "時間（とき）の翼"
+    },
+    {
+        id: 58,
+        title: "明日もし君が壊れても",
+        netid: 22667582,
+        album: "時間（とき）の翼"
+    },
+    {
+        id: 59,
+        title: "I still remember",
+        netid: 22667675,
+        album: "OH MY LOVE"
+    },
+    {
+        id: 60,
+        title: "世界はきっと未来の中",
+        netid: 22667579,
+        album: "時間（とき）の翼"
+    },
+    {
+        id: 61,
+        title: "hero",
+        netid: 22667578,
+        album: "時間（とき）の翼"
+    },
+    {
+        id: 62,
+        title: "揺れる想いGomi''s New York Remix - remix",
+        netid: 22667575,
+        album: "時間（とき）の翼"
+    },
+    {
+        id: 63,
+        title: "負けないで{Gomi''s 10th Anniversary Special Mix}",
+        netid: 22667583,
+        album: "時間（とき）の翼"
+    },
+    {
+        id: 64,
+        title: "かけがえのないもの",
+        netid: 22667511,
+        album: "君とのDistance"
+    },
+    {
+        id: 65,
+        title: "爱が见えない",
+        netid: 677616,
+        album: "Single"
+    },
+    {
+        id: 66,
+        title: "Don''t You See!",
+        netid: 677853,
+        album: "Single"
+    },
+    {
+        id: 67,
+        title: "もう探さない",
+        netid: 22667708,
+        album: "もう探さない"
+    },
+    {
+        id: 68,
+        title: "不思議ね…",
+        netid: 22667706,
+        album: "もう探さない"
+    },
+    {
+        id: 69,
+        title: "永遠",
+        netid: 22667638,
+        album: "永遠"
+    },
+    {
+        id: 70,
+        title: "素直に言えなくて",
+        netid: 22667705,
+        album: "もう探さない"
+    },
+    {
+        id: 71,
+        title: "My Baby Grand ~ぬくもりが欲し",
+        netid: 22667634,
+        album: "永遠"
+    },
+    {
+        id: 72,
+        title: "ひとりが好き",
+        netid: 22667711,
+        album: "もう探さない"
+    },
+    {
+        id: 73,
+        title: "WAKE UP MAKE THE MORNING LAST",
+        netid: 22667630,
+        album: "永遠"
+    },
+    {
+        id: 74,
+        title: "Forever",
+        netid: 22667709,
+        album: "もう探さない"
+    },
+    {
+        id: 75,
+        title: "Brand New Love",
+        netid: 22667636,
+        album: "永遠"
+    },
+    {
+        id: 76,
+        title: "Lonely Soldier Boy",
+        netid: 22667710,
+        album: "もう探さない"
+    },
+    {
+        id: 77,
+        title: "運命のルーレット廻して",
+        netid: 22667626,
+        album: "永遠"
+    },
+    {
+        id: 78,
+        title: "いつかは...",
+        netid: 22667707,
+        album: "もう探さない"
+    },
+    {
+        id: 79,
+        title: "遠い星を数えて",
+        netid: 677805,
+        album: "永遠"
+    },
+    {
+        id: 80,
+        title: "新しいドア~冬のひまわり~",
+        netid: 22667629,
+        album: "永遠"
+    },
+    {
+        id: 81,
+        title: "GOOD DAY",
+        netid: 22667632,
+        album: "永遠"
+    },
+    {
+        id: 82,
+        title: "I feel fine,yeah",
+        netid: 22667635,
+        album: "永遠"
+    },
+    {
+        id: 83,
+        title: "少女の頃に戻ったみたいに",
+        netid: 22667628,
+        album: "永遠"
+    },
+    {
+        id: 84,
+        title: "眠れない夜を抱いて",
+        netid: 22667695,
+        album: "HOLD ME"
+    },
+    {
+        id: 85,
+        title: "息もできない",
+        netid: 22667637,
+        album: "永遠"
+    },
+    {
+        id: 86,
+        title: "誰かが待ってる",
+        netid: 22667697,
+        album: "HOLD ME"
+    },
+    {
+        id: 87,
+        title: "風が通り抜ける街へ",
+        netid: 22667627,
+        album: "永遠"
+    },
+    {
+        id: 88,
+        title: "サヨナラ言えなくて",
+        netid: 22667694,
+        album: "HOLD ME"
+    },
+    {
+        id: 89,
+        title: "フォトグラフ",
+        netid: 22667633,
+        album: "永遠"
+    },
+    {
+        id: 90,
+        title: "あの微笑みを忘れないで",
+        netid: 22667702,
+        album: "HOLD ME"
+    },
+    {
+        id: 91,
+        title: "好きなように踊りたいの",
+        netid: 22667698,
+        album: "HOLD ME"
+    },
+    {
+        id: 92,
+        title: "Dangerous Tonight",
+        netid: 22667700,
+        album: "HOLD ME"
+    },
+    {
+        id: 93,
+        title: "こんなに愛しても",
+        netid: 22667696,
+        album: "HOLD ME"
+    },
+    {
+        id: 94,
+        title: "Why Don''t You Leave Me Alone",
+        netid: 22667704,
+        album: "HOLD ME"
+    },
+    {
+        id: 95,
+        title: "愛は眠ってる",
+        netid: 22667701,
+        album: "HOLD ME"
+    },
+    {
+        id: 96,
+        title: "遠い日のNostalgia",
+        netid: 22667703,
+        album: "HOLD ME"
+    },
+    {
+        id: 97,
+        title: "So Together",
+        netid: 22667699,
+        album: "HOLD ME"
+    },
+    {
+        id: 98,
+        title: "揺れる想い",
+        netid: 22667689,
+        album: "揺れる想い"
+    },
+    {
+        id: 99,
+        title: "Season",
+        netid: 22667685,
+        album: "揺れる想い"
+    },
+    {
+        id: 100,
+        title: "君がいない",
+        netid: 22667687,
+        album: "揺れる想い"
+    },
+    {
+        id: 101,
+        title: "In my arms tonight",
+        netid: 22667684,
+        album: "揺れる想い"
+    },
+    {
+        id: 102,
+        title: "明日を夢見て",
+        netid: 677664,
+        album: "止まっていた时计が今动き出した"
+    },
+    {
+        id: 103,
+        title: "あなたを好きだけど",
+        netid: 22667692,
+        album: "揺れる想い"
+    },
+    {
+        id: 104,
+        title: "時間（とき）の翼",
+        netid: 677665,
+        album: "止まっていた时计が今动き出した"
+    },
+    {
+        id: 105,
+        title: "負けないで",
+        netid: 22667688,
+        album: "揺れる想い"
+    },
+    {
+        id: 106,
+        title: "もっと近くで君の横顔見ていたい",
+        netid: 677666,
+        album: "止まっていた时计が今动き出した"
+    },
+    {
+        id: 107,
+        title: "Listen to me",
+        netid: 22667690,
+        album: "揺れる想い"
+    },
+    {
+        id: 108,
+        title: "pray",
+        netid: 677667,
+        album: "止まっていた时计が今动き出した"
+    },
+    {
+        id: 109,
+        title: "You and me",
+        netid: 22667686,
+        album: "揺れる想い"
+    },
+    {
+        id: 110,
+        title: "I want you",
+        netid: 22667693,
+        album: "揺れる想い"
+    },
+    {
+        id: 111,
+        title: "出逢いそして別れ",
+        netid: 677668,
+        album: "止まっていた时计が今动き出した"
+    },
+    {
+        id: 112,
+        title: "止まっていた時計が今動き出した",
+        netid: 677669,
+        album: "止まっていた时计が今动き出した"
+    },
+    {
+        id: 113,
+        title: "二人の夏",
+        netid: 22667691,
+        album: "揺れる想い"
+    },
+    {
+        id: 114,
+        title: "瞳閉じて",
+        netid: 677670,
+        album: "止まっていた时计が今动き出した"
+    },
+    {
+        id: 115,
+        title: "さわやかな君の気持ち{Album Ver}",
+        netid: 677671,
+        album: "止まっていた时计が今动き出した"
+    },
+    {
+        id: 116,
+        title: "愛であなたを救いましょう",
+        netid: 677672,
+        album: "止まっていた时计が今动き出した"
+    },
+    {
+        id: 117,
+        title: "天使のような笑顔で",
+        netid: 677673,
+        album: "止まっていた时计が今动き出した"
+    },
+    {
+        id: 118,
+        title: "悲しいほど 今日は雨でも",
+        netid: 677674,
+        album: "止まっていた时计が今动き出した"
+    },
+    {
+        id: 119,
+        title: "君に逢いたくなったら…",
+        netid: 677314,
+        album: "Single"
+    },
+    {
+        id: 120,
+        title: "永远{English ver}",
+        netid: 677244,
+        album: "Single"
+    },
+    {
+        id: 121,
+        title: "运命のルーレット廻して(TV on-air ver.)",
+        netid: 677245,
+        album: "Single"
+    },
+    {
+        id: 122,
+        title: "Mind Games",
+        netid: 677796,
+        album: "Single"
+    },
+    {
+        id: 123,
+        title: "悲しいほど贵方が好き",
+        netid: 22667459,
+        album: "Single"
+    },
+    {
+        id: 124,
+        title: "カラッといこう!",
+        netid: 677636,
+        album: "Single"
+    },
+    {
+        id: 125,
+        title: "ハートに火をつけて",
+        netid: 677631,
+        album: "Single"
+    },
+    {
+        id: 126,
+        title: "さわやかな君の気持ち",
+        netid: 677685,
+        album: "Single"
+    },
+    {
+        id: 127,
+        title: "Just for you",
+        netid: 677374,
+        album: "Single"
+    },
+    {
+        id: 128,
+        title: "雨に濡れて{Zard/ZYYG/WANDS/REV}",
+        netid: 677449,
+        album: "Single"
+    },
+    {
+        id: 129,
+        title: "カナリヤ",
+        netid: 677913,
+        album: "Single"
+    },
+    {
+        id: 130,
+        title: "MIND GAMES{Redway Secret Mix}",
+        netid: 677413,
+        album: "Single"
+    },
+    {
+        id: 131,
+        title: "Hypnosis",
+        netid: 677412,
+        album: "Single"
+    },
+    {
+        id: 132,
+        title: "Love is Gone",
+        netid: 677404,
+        album: "Single"
+    },
+    {
+        id: 133,
+        title: "爱を信じていたい",
+        netid: 677398,
+        album: "Single"
+    },
+    {
+        id: 134,
+        title: "帰らぬ时间の中で",
+        netid: 677396,
+        album: "Single"
+    },
+    {
+        id: 135,
+        title: "目覚めた朝は…",
+        netid: 677392,
+        album: "Single"
+    },
+    {
+        id: 136,
+        title: "Take me to your dream",
+        netid: 677384,
+        album: "Single"
+    },
+    {
+        id: 137,
+        title: "あなたのせいじゃない",
+        netid: 677382,
+        album: "Single"
+    },
+    {
+        id: 138,
+        title: "黄昏にMy Lonely Heart",
+        netid: 677378,
+        album: "Single"
+    },
+    {
+        id: 139,
+        title: "The only truth I know is you",
+        netid: 677423,
+        album: "Single"
+    },
+    {
+        id: 140,
+        title: "I can''t let go",
+        netid: 677402,
+        album: "Single"
+    },
+    {
+        id: 141,
+        title: "Vintage",
+        netid: 677406,
+        album: "Single"
+    },
+    {
+        id: 142,
+        title: "Teenage dream",
+        netid: 677388,
+        album: "Single"
+    },
+    {
+        id: 143,
+        title: "Ready Go!",
+        netid: 677386,
+        album: "Single"
+    },
+    {
+        id: 144,
+        title: "Stray Love",
+        netid: 677370,
+        album: "Single"
+    },
+    {
+        id: 145,
+        title: "Boy",
+        netid: 677380,
+        album: "Single"
+    },
+    {
+        id: 146,
+        title: "私だけ见つめて",
+        netid: 677372,
+        album: "Single"
+    },
+    {
+        id: 147,
+        title: "痛いくらい君があふれているよ{Re-Mix}",
+        netid: 677416,
+        album: "Single"
+    },
+    {
+        id: 148,
+        title: "Get U''re Dream{Version Two}",
+        netid: 677420,
+        album: "Single"
+    },
+    {
+        id: 149,
+        title: "Get U''re Dream{Version Three}",
+        netid: 677421,
+        album: "Single"
+    },
+    {
+        id: 150,
+        title: "抱きしめていて",
+        netid: 677425,
+        album: "Single"
+    },
+    {
+        id: 151,
+        title: "Seven Rainbow",
+        netid: 677426,
+        album: "Single"
+    },
+    {
+        id: 152,
+        title: "探しに行こうよ",
+        netid: 677428,
+        album: "Single"
+    },
+    {
+        id: 153,
+        title: "爱しい人よ~名もなき旅人よ~",
+        netid: 677430,
+        album: "Single"
+    },
+    {
+        id: 154,
+        title: "リセット",
+        netid: 677432,
+        album: "Single"
+    },
+    {
+        id: 155,
+        title: "无我梦中",
+        netid: 677434,
+        album: "Single"
+    },
+    {
+        id: 156,
+        title: "淡い雪がとけて",
+        netid: 677437,
+        album: "Single"
+    },
+    {
+        id: 157,
+        title: "雨が降り出す前に",
+        netid: 677438,
+        album: "Single"
+    },
+    {
+        id: 158,
+        title: "君へのブルース",
+        netid: 677444,
+        album: "Single"
+    },
+    {
+        id: 159,
+        title: "グロリアス マインド",
+        netid: 677445,
+        album: "Single"
+    },
+    {
+        id: 160,
+        title: "探しにいこうよ{id:2007 version}",
+        netid: 677446,
+        album: "Single"
+    },
+    {
+        id: 161,
+        title: "果てしない梦を",
+        netid: 677448,
+        album: "Single"
+    },
+    {
+        id: 162,
+        title: "クリスマスタイム{Zard Version}",
+        netid: 22667567,
+        album: "Single"
+    },
+    {
+        id: 163,
+        title: "クリスマスタイム{Barbier Version}",
+        netid: 677450,
+        album: "Single"
+    },
+    {
+        id: 164,
+        title: "あなたに帰りたい{Barbier Version}",
+        netid: 677451,
+        album: "Single"
+    },
+    {
+        id: 165,
+        title: "LOVE~眠れずに君の横顔见ていた~{Barbier Version}",
+        netid: 677452,
+        album: "Single"
+    },
+    {
+        id: 166,
+        title: "I still remember{Barbier Version}",
+        netid: 677453,
+        album: "Single"
+    },
+    {
+        id: 167,
+        title: "异邦人",
+        netid: 677454,
+        album: "Single"
+    },
+    {
+        id: 168,
+        title: "CANT TAKE MY EYES OFF OF YOU{Original Remix}",
+        netid: 677769,
+        album: "Single"
+    },
+    {
+        id: 169,
+        title: "さらば青春の影よDemo",
+        netid: 677254,
+        album: "Other"
+    },
+    {
+        id: 170,
+        title: "Demo -2{composed by IZUMI SAKAI}",
+        netid: 677253,
+        album: "Other"
+    },
+    {
+        id: 171,
+        title: "约束のない恋",
+        netid: 31654883,
+        album: "Other"
+    },
+    {
+        id: 172,
+        title: "汗の中でCry",
+        netnetid: 677939,
+        album: "Single"
+    }
+];
