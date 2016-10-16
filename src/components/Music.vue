@@ -28,7 +28,7 @@
 				</div>
 				<div class='middle'>
 					<div class='line song-info' style='height:24px;background:#fff;'>
-							<audio v-el:audio :src="current.mp3" hidden></audio>
+							
 							<div class='song-name fleft'><span>{{current.song}}</span></div>
 							<div class='song-time fright text-right'><span class='current-time'>00:00</span>/<span class='total-time'>00:00</span></div>
 					</div>
@@ -72,8 +72,7 @@ export default {
 			console.log(data);
 			this.songs = data.body
 		});
-		this.audio = this.$els.audio;
-		console.log(this.audio)
+		this.audio = this.$parent.audio; 
 	},
 	data() {
 		return {
@@ -92,8 +91,15 @@ export default {
 			this.current.song = title;
 			this.current.index = index;
 			this.current.mp3 = 'http://d.139.sh/1327799743/zard/'+id+'.mp3';
-			this.$nextTick(() => {this.audio.play()});
+			this.$nextTick(() => this.audio.play());
 
+		}
+	},
+	watch:{
+		'current.mp3': {
+			handler(curVal, preVal) {
+				this.$parent.mp3 = curVal;
+			}
 		}
 	}
 }
