@@ -4,8 +4,8 @@
 			<div class='music-box'>
 				<div class='top'>
 					<div class='left fleft'>
-                        <img :src='default.pic' width=70px height=70px />
-                        <audio :src='default.mp3' autoplay></audio>
+                        <img :src='current.pic' width=70px height=70px />
+                       
 					</div>
 					
 					<div class='right fleft'>
@@ -28,8 +28,8 @@
 				</div>
 				<div class='middle'>
 					<div class='line song-info' style='height:24px;background:#fff;'>
-							<div class='song-name fleft'><span>{{default.song}}</span></div>
-                        
+							<audio v-el:audio :src="current.mp3" hidden></audio>
+							<div class='song-name fleft'><span>{{current.song}}</span></div>
 							<div class='song-time fright text-right'><span class='current-time'>00:00</span>/<span class='total-time'>00:00</span></div>
 					</div>
 						<div class="progress" style='height:5px;margin-bottom:0;'>
@@ -44,10 +44,10 @@
 					<!---歌曲列表-->
 					<div class='song-list'>
 						<ul v-for="r in songs">
-							<li data-index='{{r.id}}' data-id='{{r.netid}}'>{{(r.id)+'.'+r.title}}</li>
+							<li data-index='{{r.id}}' data-id='{{r.netid}}' @click="play(r.id, r.netid, r.title)" :class="{'active': r.id == current.index}">{{(r.id)+'.'+r.title}}</li>
 						</ul>
 					</div>
-					<!---歌词部分--->
+					<!---歌词部分-->
 					<div class='song-lrc'>
 						<div class='lrc-content'>
 						<p class='text-center'>歌词</p>
@@ -71,16 +71,29 @@ export default {
 		this.$http.get('../../data/songs.json').then(function(data) {
 			console.log(data);
 			this.songs = data.body
-		})
+		});
+		this.audio = this.$els.audio;
+		console.log(this.audio)
 	},
 	data() {
 		return {
-			default: {
+			current: {
 				pic: 'http://tb.himg.baidu.com/sys/portrait/item/d34f657375796d6c6020',
 				mp3: 'http://pnp.51t.com/23/2070/58459/92018107.m4a',
-				song: 'AKB48-柠檬の年顷'
+				song: 'AKB48-柠檬の年顷',
+				index: 0
 			},
-			songs: []
+			songs: [],
+			audio: ''
+		}
+	},
+	methods: {
+		play(index, id, title) {
+			this.current.song = title;
+			this.current.index = index;
+			this.current.mp3 = 'http://d.139.sh/1327799743/zard/'+id+'.mp3';
+			this.$nextTick(() => {this.audio.play()});
+
 		}
 	}
 }
