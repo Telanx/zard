@@ -332,6 +332,7 @@ to {
 }
 #music .song-wrap {
 	width:200%;
+	    transition: all .3s ease-in-out;
 }
 #music ul {
 	padding:0;
@@ -364,11 +365,17 @@ to {
 	height:375px;
 	overflow:hidden;
 }
+#music .song-lrc .active {
+	color: #0f0;
+}
 #music .share-qzone ,.pp,.forward,.lrc-list,.play-type {
 	cursor:pointer;
 }
 #music .share-qzone:hover,.pp:hover,.forward:hover,.lrc-list:hover,.play-type:hover {
 	box-shadow:0 0 4px #000;
+}
+#music .lrc-content {
+	transition: all .3s ease;
 }
 #music .lrc-content p {
 	white-space:nowrap;
@@ -418,4 +425,9 @@ to {
 	border-top:1px solid #aaa;
 	padding:0;
 }
+}
+
+
+.transform-width {
+	transform: translate(-50%, 0);
 }

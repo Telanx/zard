@@ -1,3 +1,4 @@
+require('../server/app.js')
 var path = require('path')
 var express = require('express')
 var webpack = require('webpack')
@@ -66,3 +67,4 @@ module.exports = app.listen(port, function (err) {
   }
   console.log('Listening at http://localhost:' + port + '\n')
 })
+
