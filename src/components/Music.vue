@@ -4,8 +4,7 @@
 			<div class='music-box'>
 				<div class='top'>
 					<div class='left fleft'>
-						<img :src='current.pic' width=70px height=70px />
-						<audio :src='current.mp3' autoplay></audio>
+                        <img :src='current.pic' width=70px height=70px />
 					</div>
 
 					<div class='right fleft'>
@@ -75,7 +74,8 @@ export default {
 		this.$http.get('../../data/songs.json').then(function(data) {
 			console.log(data);
 			this.songs = data.body
-		})
+		});
+		this.audio = this.$parent.audio; 
 	},
 	data() {
 		return {
@@ -114,27 +114,7 @@ export default {
 				.catch(function(err) {
 					console.log('获取失败！'+JSON.stringify(err))
 				});
-			// 获取歌曲的信息
-			var bl = {"id":netId,"ids":[netId],"limit":10000,"offset":0,"csrf_token":""};
-			var p1 = "010001";
- 			var p2="00e0b509f6259df8642dbc35662901477df22677ec152b5ff68ace615bb7b725152b3ab17a876aea8a5aa76d2e417629ec4ee341f56135fccf695280104e0312ecbda92557c93870114af6c9d05c4f7f0c3685b7a46bee255932575cce10b424d813cfe4875d3e82047b97ddef52741d546b8e289dc6935b3ece0462db0a22b8e7"
- 			var p3 = "0CoJUm6Qyw8W8jud";
- 			var t = window.asrsea(JSON.stringify(bl),p1,p2,p3);
-			 console.log(t);
-			this.$http.jsonp('//localhost:3000/',
-				{
-					params: {
-						net_id: netId,
-						encText: t.encText,
-						encSecKey: t.encSecKey
-						
-				}
-				}).then(function(r){
-				console.log('获取歌曲成功');
-				console.log(r);
-			}).catch(function(err) {
-				console.log('获取歌曲信息失败');
-			})
+			
 		},
 		parseLrc(lrc) {
 			var arr = lrc.split(/[\r\n]/), 
