@@ -98,6 +98,9 @@ export default {
 			LRC: { words:[] }
 		}
 	},
+	headers: {
+		'Content-Type': 'application/json'
+	},
 	methods: {
 		selectSong(song) {
 			console.log(song);
@@ -114,6 +117,8 @@ export default {
 				.catch(function(err) {
 					console.log('获取失败！'+JSON.stringify(err))
 				});
+			
+			this.play(song.id, song.title, song.netId);
 			
 		},
 		parseLrc(lrc) {
@@ -167,8 +172,11 @@ export default {
 			};
 		},
 		// 播放歌曲
-		play() {
-			
+		play(id, title, netId) {
+			this.$parent.mp3 = 'http://d.139.sh/1327799743/zard/'+netId+'.mp3';
+			this.$nextTick(() => {
+				this.$parent.audio.play();
+			})
 		},
 		// 暂停播放
 		pause() {
