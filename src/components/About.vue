@@ -1,16 +1,15 @@
 <template>
-    <!----关于--->
-	<div id='about' class="mytran-transition">
+	<div id='about' transition="fade">
 		<div class='line' style='min-height:100px;'>
 			<div class='col-md-2 col-xs-12'>
 				<ul class='about-menu'>
-					<li class='tieba'>贴吧</li>
-					<li class='wechat'>微信</li>
-					<li class='qq'>QQ</li>	
+					<li class='tieba' :class="{ 'selected': currentTab === 'tieba' }" @click="switchTo('tieba')">贴吧</li>
+					<li class='wechat' :class="{ 'selected': currentTab === 'wechat' }" @click="switchTo('wechat')">微信</li>
+					<li class='qq' :class="{ 'selected': currentTab === 'qq' }" @click="switchTo('qq')">QQ</li>	
 				</ul>
 			</div>
 			<div class='col-md-10 col-xs-12'>
-				<div class='line tieba-content'>
+				<div class='line tieba-content' v-if="currentTab === 'tieba'" transition="fade">
 					<ul>
 						<li>
 							<a href='http://tieba.baidu.com/f?ie=utf-8&kw=zard' target="_blank">
@@ -68,7 +67,7 @@
 					</ul>
 					
 				</div>
-				<div class='line wechat-content hidden'>
+				<div class='line wechat-content' v-if="currentTab === 'wechat'" transition="fade">
                     <h5 class='text-muted'>新浪微博</h5>
                     <p  style='line-height:45px;'>微博搜索<a href='http://weibo.com/u/1751906385?topnav=1&wvr=6&topsug=1' target='_blank'><strong>坂井泉水_ZARD</strong></a>添加关注。</p>
 					<h5 class='text-muted'>微信订阅号</h5>
@@ -77,7 +76,7 @@
                     
                     
 				</div>
-				<div class='line qq-content hidden'>
+				<div class='line qq-content' v-if="currentTab === 'qq'" transition="fade">
 					<h5 class='text-muted'>QQ群</h5>
 					<p style='line-height:45px;'>Soffio~Taste ZARD 群号:<strong>65367929</strong></p>
 					
@@ -93,5 +92,18 @@
 		</div>
 	</div>
 </template>
-<script></script>
+<script>
+export default {
+	data() {
+		return {
+			currentTab: 'tieba'
+		}
+	},
+	methods: {
+		switchTo(str) {
+			this.currentTab = str;
+		}
+	}
+}
+</script>
 <style></style>

@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import VueResource from 'vue-resource'
 
+import $ from 'jquery'
+
 import Home from './components/Home.vue'
 import Music from './components/Music.vue'
 import About from './components/About.vue'
@@ -51,7 +53,7 @@ Vue.transition('print', {
 				_this.html(str.substring(0, index));
 				clearTimeout(timer);
 				console.log('加载完毕');
-				callback();
+
 						};
 		}
 		setTimeout(timer, ops.speed);

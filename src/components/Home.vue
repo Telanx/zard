@@ -1,5 +1,5 @@
 <template>
-	<div id='index' class='wrap mytran-transition'  :style="{ marginLeft: marginLeft+'px'}">
+	<div id='index' class='wrap'  :style="{ marginLeft: marginLeft+'px'}" transition="fade">
 		<div class='index zard-content'>
 			<div class='container line'>
 				<div class='left-text col-md-7' v-if="show" transition="print">

@@ -427,7 +427,10 @@ to {
 }
 }
 
-
+/** fade-transition **/
+.fade-transition {
+	transition: .2s ease all;
+}
 .transform-width {
 	transform: translate(-50%, 0);
 }
