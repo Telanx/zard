@@ -9,3 +9,7 @@
 >npm i
 >npm run dev
 ```
+###How to Build
+```shell
+>npm run build
+```
