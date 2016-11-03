@@ -15,7 +15,7 @@
 								<li @click="toggleLrc"><span class='lrc-list glyphicon' v-bind:class="{ 'glyphicon-text-width': !player.lrc, 'glyphicon-list': player.lrc }"
 										title='切换歌词/列表'></span></li>
 								<li @click="togglePlayerMod"><span class='play-type glyphicon' :class="{ 'glyphicon-music': player.mod === 'seq'  , 'glyphicon-repeat': player.mod == 'cycle', 'glyphicon-random': player.mod === 'rand'}" title='播放方式'></span></li>
-								<li>
+								<li @click="share">
 									<span class='share-qzone glyphicon glyphicon-share' title='分享到QQ空间'></span>
 								</li>
 
@@ -74,8 +74,18 @@ export default {
 		this.$http.get('../../data/songs.json').then(function(data) {
 			console.log(data);
 			this.songs = data.body
+			this.audio = this.$parent.audio;
+			var id = this.$route.params.id; 
+			
+			if (id != undefined) {
+				this.selectSong({
+					id: id,
+					netId: this.songs[id-1].netid,
+					title: this.songs[id-1].title
+
+				})
+			}
 		});
-		this.audio = this.$parent.audio; 
 	},
 	data() {
 		return {
@@ -283,6 +293,31 @@ export default {
 				var s = Math.round((t%60000)/1000);
 				s = s>9?s:('0'+s);
 				return m+':'+s;
+		},
+		// 分享接口
+		share() {
+			var netid = this.current.netId;
+			var pic = this.current.pic;
+			var songIndex = this.current.id;
+			var songname = this.current.song;
+			var p = {
+				url:'/#music/'+songIndex,
+				showcount:'1',/*是否显示分享总数,显示：'1'，不显示：'0' */
+				desc:'我正在听ZARD的歌曲《'+songname+'》，也推荐你来听哦^^',/*默认分享理由(可选)*/
+				summary:'ZARD',/*分享摘要(可选)*/
+				title:songname,/*分享标题(可选)*/
+				site:'ZARD',/*分享来源 如：腾讯网(可选)*/
+				pics:pic, /*分享图片的路径(可选)*/
+				style:'202',
+				width:105,
+				height:31
+			};
+			var s = [];
+			for(var i in p){
+				s.push(i + '=' + encodeURIComponent(p[i]||''));
+			}
+			//window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?'+s.join('&'));
+			window.open('http://connect.qq.com/widget/shareqq/index.html?'+s.join('&'));
 		}
 	}
 }

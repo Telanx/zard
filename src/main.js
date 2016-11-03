@@ -86,6 +86,10 @@ router.map({
     component: Music,
     page: 'music'
   },
+	'/music/:id': {
+		component: Music,
+		page: 'music'
+	},
   '/about': {
     component: About,
     page: 'about'
