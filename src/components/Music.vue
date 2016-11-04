@@ -43,8 +43,8 @@
 					<div class='song-wrap' v-bind:class="{ 'transform-width': player.lrc }">
 						<!---歌曲列表-->
 						<div class='song-list'>
-							<ul v-for="r in songs">
-								<li v-bind:class="{ 'active': current.id === r.id }" data-index='{{r.id}}' data-id='{{r.netid}}' @click="selectSong({ id: r.id, netId: r.netid, title: r.title })">{{(r.id)+'.'+r.title}}</li>
+							<ul>
+								<li v-for="r in songs" v-bind:class="{ 'active': current.id === r.id }" data-index='{{r.id}}' data-id='{{r.netid}}' @click="selectSong({ id: r.id, netId: r.netid, title: r.title })">{{(r.id)+'.'+r.title}}</li>
 							</ul>
 						</div>
 						<div class='song-lrc'>
@@ -78,6 +78,7 @@ export default {
 			var id = this.$route.params.id; 
 			
 			if (id != undefined) {
+				id = parseInt(id);
 				this.selectSong({
 					id: id,
 					netId: this.songs[id-1].netid,
@@ -100,7 +101,7 @@ export default {
 				id: 0,
 				pic: 'http://tb.himg.baidu.com/sys/portrait/item/d34f657375796d6c6020',
 				mp3: 'http://pnp.51t.com/23/2070/58459/92018107.m4a',
-				song: 'AKB48-柠檬の年顷',
+				song: 'ZARD-坂井泉水',
 				current_time: '00:00',
 				total_time: '00:00',
 				lrc: '歌词'
@@ -120,7 +121,6 @@ export default {
 			this.player.mod = mods[index];
 		},
 		selectSong(song) {
-			console.log(song);
 			var _this = this;
 			this.current.id = song.id;
 			this.current.song = song.title;
@@ -202,6 +202,9 @@ export default {
 		},
 		// 播放歌曲
 		play(id, title, netId) {
+			if (id > 5) {
+				$('.song-list').animate({ scrollTop: (id-5)*36})
+			}
 			this.$parent.mp3 = 'http://d.139.sh/1327799743/zard/'+netId+'.mp3';
 			clearInterval(this.player.timer);
 			this.$nextTick(() => {

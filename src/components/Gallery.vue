@@ -84,6 +84,7 @@ export default {
 	watch: {
 		'current.index': {
 			handler(cur, prev) {
+				if (cur == '') cur = 0;
 				this.current.pic = this.picList[cur].url;
 			}
 		}
