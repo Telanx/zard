@@ -1,0 +1,56 @@
+/** 通用颜色定义 */
+@import './color.scss';
+
+/** 引入bootstrap样式 */
+@import url('//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css');
+/** 引入图标库 */
+@import url('//at.alicdn.com/t/font_9i59uu0o58w7b9.css');
+
+/** 全局通用样式定义 */
+/** 文字样式 **/
+body {
+  font-family: Microsoft Yahei;
+}
+.text-white {
+  color: $white;
+}
+.text-red {
+  color: $danger;
+}
+.text-gray {
+  color: $gray;
+}
+.text-green {
+  color: $greenJungle;
+}
+.text-blue {
+  color: $blue;
+}
+
+/** 文字大小 **/   
+
+/** 动画特效 **/
+.fade-transition-enter-active, .fade-transition-leave-active {
+  transition: opacity .3s ease;
+}
+.fade-transition-enter, .fade-transition-leave-active {
+  opacity: 0;
+}
+
+ @keyframes dash {
+  from{
+    stroke-dashoffset: 250; /* 这里是svg图形中素描线长度，可以使用js获取 */
+  }
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+/* 支持chrome浏览器 */
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 250; /* 这里是svg图形中素描线长度，可以使用js获取 */
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
