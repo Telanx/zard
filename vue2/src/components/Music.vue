@@ -301,7 +301,7 @@ export default {
 			var songname = this.current.song;
 			var p = {
 				url:'/#music/'+songIndex,
-				showcount:'1',/*是否显示分享总数,显示：'1'，不显示：'0' */
+				showcount:'0',/*是否显示分享总数,显示：'1'，不显示：'0' */
 				desc:'我正在听ZARD的歌曲《'+songname+'》，也推荐你来听哦^^',/*默认分享理由(可选)*/
 				summary:'ZARD',/*分享摘要(可选)*/
 				title:songname,/*分享标题(可选)*/
