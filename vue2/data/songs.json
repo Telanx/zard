@@ -391,7 +391,7 @@
     },
     {
         "id": 66,
-        "title": "Don''t You See!",
+        "title": "Don't You See!",
         "netid": 677853,
         "album": "Single"
     },
@@ -1030,5 +1030,29 @@
         "title": "汗の中でCry",
         "netid": 677939,
         "album": "Single"
+    },
+    {
+        "id": 173,
+        "title": "This Masquerade",
+        "netid": 3985490,
+        "album": "Other"
+    },
+    {
+        "id": 174,
+        "title": "Black Velvet",
+        "netid": 26715728,
+        "album": "Other"
+    },
+    {
+        "id": 175,
+        "title": "Change My Mind",
+        "netid": 22667562,
+        "album": "Blend II ~Leaf & Snow~"
+    },
+    {
+        "id": 176,
+        "title": "翼を広げて",
+        "netid": 677519,
+        "album": "翼を広げて/爱は暗暗の中で"
     }
 ]
