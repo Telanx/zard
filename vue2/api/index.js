@@ -9,7 +9,7 @@ const handler = (req, res) => {
             if(err) {
                 return res.status(500).end(JSON.stringify(err));
             }
-            res.end(body);
+            return res.end(body);
         });
     }
     res.status(404).end('<h1>404 Not Found</h1>');
