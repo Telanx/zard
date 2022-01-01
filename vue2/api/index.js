@@ -1,5 +1,6 @@
 import request from 'request';
 const handler = (req, res) => {
+    return res.end(JSON.stringify(req));
     if(req.query.url) {
         let reqjson = {
             url: req.query.url,
