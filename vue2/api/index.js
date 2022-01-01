@@ -1,20 +1,16 @@
-import request from 'request';
-const handler = (req, res) => {
-    return res.end(JSON.stringify(req));
-    if(req.query.url) {
-        let reqjson = {
-            url: req.query.url,
-            method: 'GET',
-        };
-        request(reqjson, (err, res2, body) => {
-            if(err) {
-                return res.status(500).end(JSON.stringify(err));
-            }
-            return res.end(body);
-        });
-    } else {
-        res.status(404).end('<h1>404 Not Found</h1>');
-    }
+const app = require('express')();
+const { v4 } = require('uuid');
 
-}
-module.exports = handler;
+app.get('/api', (req, res) => {
+  const path = `/api/item/${v4()}`;
+  res.setHeader('Content-Type', 'text/html');
+  res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
+  res.end(`Hello! Go to item: <a href="${path}">${path}</a>`);
+});
+
+app.get('/api/item/:slug', (req, res) => {
+  const { slug } = req.params;
+  res.end(`Item: ${slug}`);
+});
+
+module.exports = app;
