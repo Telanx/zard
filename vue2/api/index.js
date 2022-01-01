@@ -11,8 +11,9 @@ const handler = (req, res) => {
             }
             return res.end(body);
         });
+    } else {
+        res.status(404).end('<h1>404 Not Found</h1>');
     }
-    res.status(404).end('<h1>404 Not Found</h1>');
 
 }
 module.exports = handler;
