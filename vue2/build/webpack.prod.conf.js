@@ -90,6 +90,14 @@ var webpackConfig = merge(baseWebpackConfig, {
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
       }
+    ]),
+    // copy api files to root rirectory for vercel
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, '../api'),
+        to: path.resolve(__dirname, '../dist/api'),
+        ignore: ['.*']
+      }
     ])
   ]
 })

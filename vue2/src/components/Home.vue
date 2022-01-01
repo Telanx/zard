@@ -29,7 +29,7 @@ const printData = [
   '<p>一定不会忘记。</p>',
 ];
 export default {
-  name: 'index',
+  name: 'home',
   components: {
     Printer,
   },
