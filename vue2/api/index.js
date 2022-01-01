@@ -7,7 +7,7 @@ const handler = (req, res) => {
         };
         request(reqjson, (err, res2, body) => {
             if(err) {
-                return res.status(500).end(err);
+                return res.status(500).end(json.stringify(err));
             }
             res.end(body);
         });
