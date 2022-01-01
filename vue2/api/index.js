@@ -5,11 +5,11 @@ const handler = (req, res) => {
             url: req.query.url,
             method: 'GET',
         };
-        request(reqjson, (err, res, body) => {
+        request(reqjson, (err, res2, body) => {
             if(err) {
                 return res.status(500).end(err);
             }
-            res.end(body2);
+            res.end(body);
         });
     }
     res.status(404).end('<h1>404 Not Found</h1>');
