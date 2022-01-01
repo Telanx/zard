@@ -1,3 +1,4 @@
+import fetch from 'isomorphic-unfetch';
 const app = require('express')();
 const { v4 } = require('uuid');
 
