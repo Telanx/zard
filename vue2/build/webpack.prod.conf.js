@@ -5,6 +5,7 @@ var config = require('../config')
 var merge = require('webpack-merge')
 var baseWebpackConfig = require('./webpack.base.conf')
 var CopyWebpackPlugin = require('copy-webpack-plugin')
+var CopyafterbuildPlugin = require('./copy-after-build')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
@@ -91,14 +92,13 @@ var webpackConfig = merge(baseWebpackConfig, {
         ignore: ['.*']
       }
     ]),
-    // copy api files to root rirectory for vercel
-    new CopyWebpackPlugin([
-      {
-        from: path.resolve(__dirname, '../dist'),
-        to: path.resolve(__dirname, '../../'),
-        ignore: ['.*']
-      }
-    ])
+    // copy ./dist to /root for github pages
+    new CopyafterbuildPlugin({
+      from: path.resolve(__dirname, '../dist'),
+      to: path.resolve(__dirname, '../../'),
+    })
+
+
   ]
 })
 
@@ -124,5 +124,6 @@ if (config.build.bundleAnalyzerReport) {
   var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
   webpackConfig.plugins.push(new BundleAnalyzerPlugin())
 }
+
 
 module.exports = webpackConfig
