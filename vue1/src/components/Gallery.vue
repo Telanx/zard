@@ -71,7 +71,7 @@ export default {
 		},
 		refresh() {
 			this.current.index = '';
-			this.$http.get('http://telanx.gotoip1.com/api/pic.php?n=8')
+			this.$http.get('http://vercel-api-rose.vercel.app/api/pic?n=8')
 			.then(data => {
 				this.picList = JSON.parse(data.body);
 				this.current.index = 0;

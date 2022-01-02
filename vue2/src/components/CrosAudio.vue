@@ -1,6 +1,6 @@
 <template>
 <div class="crosaudio">
-  <iframe ref="crosaudio" src="javascript:'<audio></audio>'"></iframe>
+  <audio ref="crosaudio"></audio>
 </div>
 </template>
 <script>
@@ -12,7 +12,7 @@ export default {
     };
   },
   mounted() {
-    this.audio = this.$refs.crosaudio.contentWindow.document.getElementsByTagName('audio')[0];
+    this.audio = this.$refs.crosaudio;
   },
 };
 </script>

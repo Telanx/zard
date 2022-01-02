@@ -54,7 +54,7 @@ export default {
   },
   methods: {
     preload(fn) {
-      $.getJSON('http://telanx.gotoip1.com/api/pic.php?n=8', (res) => {
+      $.getJSON('http://vercel-api-rose.vercel.app/api/pic?n=8', (res) => {
         this.pics = this.pics.concat(res.map(x => x.url));
         if (typeof fn !== 'undefined') {
           fn();
