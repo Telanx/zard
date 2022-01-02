@@ -12,7 +12,7 @@ function CopyafterbuildPlugin(options) {
                 }
                 return fs.copyFile(from, to);
             }).catch(err => {
-                //console.log(`目标路径${to}不存在:复制文件失败！`);
+                // console.log(`目标路径${to}不存在:复制文件失败！`);
                 return fs.copyFile(from, to);
             });
     }
@@ -24,9 +24,8 @@ function CopyafterbuildPlugin(options) {
         if (name) {
             // 创建目录
             let topath = path.resolve(to);
-            fs.access(to).
-                then().
-                catch(err => {
+            fs.access(to)
+                .catch(err => {
                     // 不存在则新建
                     // ('新建目录：'+topath);
                     fs.mkdir(topath);
